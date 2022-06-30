@@ -10,6 +10,10 @@ npx kylereddoch
 
 And get to know me in nerdy, unique style.
 
+### It will look something like this:
+
+![npx card look](https://github.com/kylereddoch/npx_card/blob/master/imgs/npx_sample.png?raw=true)
+
 ### I spent a consideral amount of effort (considering I hadn't played with node.js and npm too much) building and designing this iteration of npx card, and I am proud of it! All I ask of you all is, if you like it and use it, to put a **star** ⭐ on this project and fork it. Please do not claim this effort as your own ♥.
 
 #### STEPS TO CREATE YOUR OWN
