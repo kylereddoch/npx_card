@@ -1,10 +1,10 @@
 {
   "name": "kylereddoch",
-  "version": "2.0.1",
-  "description": "A personal CLI card for Kyle Reddoch (@kylereddoch)",
+  "version": "2.1.0",
+  "description": "A personal CLI card for Kyle Reddoch (@cyberseckyle)",
   "main": "card.js",
   "bin": {
-    "kyle": "./card.js"
+    "kyle": "card.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "cli-spinners": "^2.5.0",
-    "inquirer": "^7.3.2",
+    "inquirer": "^12.9.6",
     "open": "^7.0.4",
     "ora": "^5.1.0",
     "prettyjson": "^1.2.5",
@@ -34,6 +34,11 @@
     "npx card",
     "business card"
   ],
-  "author": "Kyle Reddoch <kylereddoch@me.com> (https://kylereddoch.me/)",
-  "license": "ISC"
+  "author": "Kyle Reddoch <kylereddoch@proton.me> (https://kylereddoch.me/)",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kylereddoch/npx_card/issues"
+  },
+  "homepage": "https://github.com/kylereddoch/npx_card#readme"
 }

@@ -26,22 +26,29 @@ const questions = [
             {
                 name: `Send me an ${chalk.green.bold("email")}?`,
                 value: () => {
-                    open("mailto:kylereddoch@me.com");
+                    open("mailto:kylereddoch@proton.me");
                     console.log("\n Done! See you soon in the inbox. \n");
-                }
-            },
-            {
-                name: `View my ${chalk.magentaBright.bold("Resume")}?`,
-                value: () => {
-                    open('https://kylereddoch.me/online-cv/');
-                    console.log("\n Browsing Resume... \n");
                 }
             },
             {
                 name: `Schedule a ${chalk.redBright.bold("Meeting")}?`,
                 value: () => {
-                    open('https://calendly.com/kyle_reddoch/30min');
+                    open('https://calendly.com/cybersec/30min');
                     console.log("\n See you at the meeting \n");
+                }
+            },
+            {
+                name: `View my ${chalk.hex('#a132f0').bold("Blog")}?`,
+                value: () => {
+                    open('https://kylereddoch.me');
+                    console.log("\n Browsing Blog... \n");
+                }
+            },
+            {
+                name: `View my ${chalk.magentaBright.bold("Resume")}?`,
+                value: () => {
+                    open('https://cv.kylereddoch.me');
+                    console.log("\n Browsing Resume... \n");
                 }
             },
             {
@@ -55,34 +62,36 @@ const questions = [
 ];
 
 const data = {
-    name: purple("                    Kyle Reddoch"),
-    handle: chalk.white("@kylereddoch"),
-    work: chalk.black.bgCyan("Software Engineer // Developer"),
-    /*work: `${chalk.white("Lead Software Engineer at")} ${chalk
+    name: purple("                           Kyle Reddoch"),
+    handle: chalk.white("@cyberseckyle"),
+    headline: chalk.black.bgCyan("Cybersecurity & IT Solutions Leader"),
+    work: `${chalk.white("Head of MSP Solutions at")} ${chalk
         .hex("#2b82b2")
-        .bold("FootLoose Labs")}`,*/
-    twitter: chalk.gray("https://twitter.com/") + chalk.cyan("winphankyle"),
+        .bold("Panhandle Computer Services")}`,
+    mastodon: chalk.gray("https://infosec.exchange/") + chalk.cyan("@cyberseckyle"),
     github: chalk.gray("https://github.com/") + chalk.green("kylereddoch"),
     linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("kylereddoch"),
-    web: chalk.yellow("https://direct.me/kylereddoch"),
+    web: chalk.yellow("https://profile.kylereddoch.me"),
     npx: chalk.red("npx") + " " + chalk.white("kylereddoch"),
 
     labelWork: chalk.white.bold("       Work:"),
-    labelTwitter: chalk.white.bold("    Twitter:"),
+    labelHeadline: chalk.white.bold("   Headline:"),
+    labelMastodon: chalk.white.bold("   Mastodon:"),
     labelGitHub: chalk.white.bold("     GitHub:"),
     labelLinkedIn: chalk.white.bold("   LinkedIn:"),
     labelWeb: chalk.white.bold("        Web:"),
     labelCard: chalk.white.bold("       Card:"),
-    bio: chalk.italic("I am currently looking for new opportunities to\nconnect with fellow programmers. My inbox is always\nopen; whether you have a question, a collaboration\nidea, or just want to chat, I'll be happy to talk\nto you!")
+    bio: chalk.italic("I am currently looking for new opportunities and to connect with\nlike-minded individuals. My inbox is always open; whether you have\na question, a collaboration idea, or just want to chat, I'll be\nhappy to talk to you!")
 };
 
 const me = boxen(
     [
         `${data.name}`,
         ``,
+        `${data.labelHeadline}  ${data.headline}`,
         `${data.labelWork}  ${data.work}`,
         ``,
-        `${data.labelTwitter}  ${data.twitter}`,
+        `${data.labelMastodon}  ${data.mastodon}`,
         `${data.labelGitHub}  ${data.github}`,
         `${data.labelLinkedIn}  ${data.linkedin}`,
         `${data.labelWeb}  ${data.web}`,
